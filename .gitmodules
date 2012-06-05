@@ -1,0 +1,3 @@
+[submodule "Android.Dialog"]
+	path = Android.Dialog
+	url = https://github.com/sam-lippert/Android.Dialog.git
