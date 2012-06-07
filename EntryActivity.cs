@@ -5,7 +5,7 @@ using Android.Views;
 
 namespace DialogSampleApp
 {
-    [Activity(Label = "My Activity", Theme = "@android:style/Theme.Black.NoTitleBar", WindowSoftInputMode = SoftInput.AdjustPan)]
+    [Activity(Label = "EntryElement Test", WindowSoftInputMode = SoftInput.AdjustPan)]
     public class EntryActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

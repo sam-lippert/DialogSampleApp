@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace DialogSampleApp
 {
-    [Activity(Label = "My Activity", Theme = "@android:style/Theme.Black.NoTitleBar")]
+    [Activity(Label = "Names")]
     public class NameActivity : Activity {
         protected override void OnCreate(Bundle bundle)
         {

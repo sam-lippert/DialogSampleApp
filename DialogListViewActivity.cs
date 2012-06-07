@@ -9,11 +9,10 @@ using Android.Widget;
 
 namespace DialogSampleApp
 {
-    [Activity(Label = "MonoDroidDialogApp",
+    [Activity(Label = "DialogListView Test",
         WindowSoftInputMode = SoftInput.AdjustPan,
         ConfigurationChanges = ConfigChanges.KeyboardHidden | ConfigChanges.Orientation,
-        LaunchMode = LaunchMode.SingleTop,
-        Theme = "@android:style/Theme.Light.NoTitleBar")]
+        LaunchMode = LaunchMode.SingleTop)]
     public class DialogListViewActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

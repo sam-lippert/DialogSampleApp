@@ -44,7 +44,7 @@ namespace DialogSampleApp
                 new Section("Test Header", "Test Footer")
                 {
                     new ButtonElement("DialogActivity", (o, e) => StartNew()),
-                    new StringElement("DialogActivity List", (int)DroidResources.ElementLayout.dialog_labelfieldright)
+                    new StringElement("DialogListView Activity", (int)DroidResources.ElementLayout.dialog_labelfieldright)
                     {
                         Click = (o, e) => ClickList(),
                     },
