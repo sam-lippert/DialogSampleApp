@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using Android.Dialog;
+using System.Linq;
 
 namespace DialogSampleApp
 {
@@ -67,15 +68,23 @@ namespace DialogSampleApp
                 },
                 new Section("Group")
                 {
-                    new RootElement ("Radio Group",  new Android.Dialog.RadioGroup ("dessert", 2))
+                    new RootElement("Radio Group", new Android.Dialog.RadioGroup("dessert", 2))
                     {
                         new Section
                         {
-                            new RadioElement ("Ice Cream Sandwich", "dessert"),
-                            new RadioElement ("Honeycomb", "dessert"),
-                            new RadioElement ("Gingerbread", "dessert"),
+                            new RadioElement("Ice Cream Sandwich", "dessert"),
+                            new RadioElement("Honeycomb", "dessert"),
+                            new RadioElement("Gingerbread", "dessert"),
                         },
-                    }
+                    },
+                }
+            };
+
+            Root.Last().FooterView = new ViewElement(Android.Resource.Layout.SimpleListItem1)
+            {
+                Populate = view =>
+                {
+                    view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = "Custom footer view";
                 },
             };
 
