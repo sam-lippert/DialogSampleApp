@@ -12,7 +12,8 @@ namespace DialogSampleApp
     [Activity(Label = "DialogListView Test",
         WindowSoftInputMode = SoftInput.AdjustPan,
         ConfigurationChanges = ConfigChanges.KeyboardHidden | ConfigChanges.Orientation,
-        LaunchMode = LaunchMode.SingleTop)]
+        LaunchMode = LaunchMode.SingleTop,
+        Theme = "@style/ApplicationTheme")]
     public class DialogListViewActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

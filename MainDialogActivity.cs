@@ -66,7 +66,8 @@ namespace DialogSampleApp
                         Password = true,
                     },
                 },
-                new Section("Group")
+                new Section("Group", new ViewElement(Android.Resource.Layout.SimpleListItem1)
+                    { Populate = view => { view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = "Custom footer view"; }, })
                 {
                     new RootElement("Radio Group", new Android.Dialog.RadioGroup("dessert", 2))
                     {
@@ -78,14 +79,6 @@ namespace DialogSampleApp
                         },
                     },
                 }
-            };
-
-            Root.Last().FooterView = new ViewElement(Android.Resource.Layout.SimpleListItem1)
-            {
-                Populate = view =>
-                {
-                    view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = "Custom footer view";
-                },
             };
 
             ValueChanged += root_ValueChanged;
