@@ -45,6 +45,7 @@ namespace Android.Dialog
             if (view != null)
             {
                 _caption.Text = Caption;
+                _caption.Visibility = Caption == null ? ViewStates.Gone : ViewStates.Visible;
                 _text.Text = Value;
                 if (FontSize > 0)
                 {
@@ -76,5 +77,13 @@ namespace Android.Dialog
             //_text.Dispose();
             _text = null;
         }
+    }
+
+    public class StringMultilineElement : StringElement
+    {
+        public StringMultilineElement(string caption) : base(caption) { }
+        public StringMultilineElement(string caption, int layoutId) : base(caption, layoutId) { }
+        public StringMultilineElement(string caption, string value) : base(caption, value) { }
+        public StringMultilineElement(string caption, string value, int layoutId) : base(caption, value, layoutId) { }
     }
 }
