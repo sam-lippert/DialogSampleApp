@@ -45,7 +45,7 @@ namespace DialogSampleApp
                 new Section("Test Header", "Test Footer")
                 {
                     new ButtonElement("DialogActivity", (o, e) => StartNew()),
-                    new StringElement("DialogListView Activity", (int)DroidResources.ElementLayout.dialog_labelfieldright)
+                    new StringElement("DialogListView Activity", Resource.Layout.dialog_labelfieldright)
                     {
                         Click = (o, e) => ClickList(),
                     },
@@ -69,7 +69,7 @@ namespace DialogSampleApp
                 new Section("Group", new ViewElement(Android.Resource.Layout.SimpleListItem1)
                     { Populate = view => { view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = "Custom footer view"; }, })
                 {
-                    new RootElement("Radio Group", new Android.Dialog.RadioGroup("dessert", 2))
+                    (Element)new RootElement("Radio Group", new Android.Dialog.RadioGroup("dessert", 2))
                     {
                         new Section
                         {

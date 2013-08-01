@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,56 +58,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\dialog_achievements.xml" />
-    <AndroidResource Include="Resources\layout\dialog_boolfieldleft.xml" />
-    <AndroidResource Include="Resources\layout\dialog_boolfieldright.xml" />
-    <AndroidResource Include="Resources\layout\dialog_boolfieldsubleft.xml" />
-    <AndroidResource Include="Resources\layout\dialog_boolfieldsubright.xml" />
-    <AndroidResource Include="Resources\layout\dialog_button.xml" />
-    <AndroidResource Include="Resources\layout\dialog_datefield.xml" />
-    <AndroidResource Include="Resources\layout\dialog_fieldsetlabel.xml" />
-    <AndroidResource Include="Resources\layout\dialog_floatimage.xml" />
-    <AndroidResource Include="Resources\layout\dialog_html.xml" />
-    <AndroidResource Include="Resources\layout\dialog_labeldisclosure.xml" />
-    <AndroidResource Include="Resources\layout\dialog_labelfieldbelow.xml" />
-    <AndroidResource Include="Resources\layout\dialog_labelfieldright.xml" />
-    <AndroidResource Include="Resources\layout\dialog_multiline_labelfieldbelow.xml" />
-    <AndroidResource Include="Resources\layout\dialog_onofffieldright.xml" />
-    <AndroidResource Include="Resources\layout\dialog_panel.xml" />
-    <AndroidResource Include="Resources\layout\dialog_root.xml" />
-    <AndroidResource Include="Resources\layout\dialog_selectlist.xml" />
-    <AndroidResource Include="Resources\layout\dialog_selectlistfield.xml" />
-    <AndroidResource Include="Resources\layout\dialog_textarea.xml" />
-    <AndroidResource Include="Resources\layout\dialog_textfieldbelow.xml" />
-    <AndroidResource Include="Resources\layout\dialog_textfieldright.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\dialog_expander_ic_minimized.9.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\layout\form_with_buttons.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\spinner_default_holo_dark.9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\spinner_default_holo_light.9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\spinner_default_holo_dark.9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xhdpi\spinner_default_holo_light.9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\spinner_default_holo_dark.9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable-mdpi\spinner_default_holo_light.9.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\custom_string_element.xml" />
@@ -117,14 +75,11 @@
       <Name>Android.Dialog</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\values-v11\Styles.xml" />
-    <AndroidJavaLibrary Include="Resources\SupportLib\android-support-v4.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -32,9 +32,9 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_gravity="left|center_vertical"
-		android:src="@drawable/icon"
+		android:src="@drawable/dialog_disclosure"
 		android:layout_marginLeft="3dp"
-		android:layout_marginRight="3dp"
+		android:layout_marginRight="5dp"
 		/>
     <SeekBar android:id="@+id/dialog_SliderField"
 		android:layout_width="fill_parent"
@@ -48,9 +48,9 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_gravity="right|center_vertical"
-		android:src="@drawable/spinner_default_holo_dark"
+		android:src="@drawable/dialog_disclosure"
 		android:layout_marginLeft="3dp"
-		android:layout_marginRight="3dp"
+		android:layout_marginRight="9dp"
 		/>
   </LinearLayout>
 </LinearLayout>

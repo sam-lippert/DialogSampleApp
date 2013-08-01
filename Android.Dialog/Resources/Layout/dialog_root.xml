@@ -38,9 +38,9 @@
       android:id="@+id/dialog_DisclosureField"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginLeft="8dp"
-      android:layout_marginRight="8dp"
+      android:layout_marginLeft="3dp"
+      android:layout_marginRight="9dp"
       android:layout_gravity="center_vertical"
-      android:src="@drawable/dialog_expander_ic_minimized"
+      android:src="@drawable/expander_ic_minimized"
   />
 </LinearLayout>

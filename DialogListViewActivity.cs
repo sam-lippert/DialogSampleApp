@@ -36,11 +36,11 @@ namespace DialogSampleApp
             {
                 new Section("Element w/Format Overrides")
                 {
-                    new CheckboxElement("CheckboxElement", true, "", (int)DroidResources.ElementLayout.dialog_boolfieldsubright),
-                    new StringElement("String Element", "Value", (int)DroidResources.ElementLayout.dialog_labelfieldbelow),
-                    new EntryElement("EntryElement", string.Empty, (int)DroidResources.ElementLayout.dialog_textfieldbelow) { Hint = "Plain" },
-                    new EntryElement("PasswordEntryElement", "Va", (int)DroidResources.ElementLayout.dialog_textfieldbelow) { Hint = "Password", Password = true, },
-                    new EntryElement("EntryElement2", "Val", (int)DroidResources.ElementLayout.dialog_textfieldbelow) { Hint = "Plain3" },
+                    new CheckboxElement("CheckboxElement", true, "", Resource.Layout.dialog_boolfieldsubright),
+                    new StringElement("String Element", "Value", Resource.Layout.dialog_labelfieldbelow),
+                    new EntryElement("EntryElement", string.Empty, Resource.Layout.dialog_textfieldbelow) { Hint = "Plain" },
+                    new EntryElement("PasswordEntryElement", "Va", Resource.Layout.dialog_textfieldbelow) { Hint = "Password", Password = true, },
+                    new EntryElement("EntryElement2", "Val", Resource.Layout.dialog_textfieldbelow) { Hint = "Plain3" },
                 },
                 new Section("Section")
                 {
@@ -59,7 +59,7 @@ namespace DialogSampleApp
                 },
                 new Section("Groups")
                 {
-                    new RootElement ("Radio Group",  new Android.Dialog.RadioGroup ("dessert", 2))
+                    (Element)new RootElement ("Radio Group",  new Android.Dialog.RadioGroup ("dessert", 2))
                     {
                         new Section
                         {
